@@ -86,7 +86,7 @@ It is also part of my journey of building and experimenting with different web d
 
 ## 👨‍💻 Author
 
-**Eshan**
+**Eshan Maity**
 
 CSE Student | Developer | Learning & Building 🚀
 
