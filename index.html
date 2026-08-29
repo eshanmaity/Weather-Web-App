@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+
+        <div class="header">
+
+            <h1><i class="fa-solid fa-cloud-sun"></i> Weather Dashboard</h1>
+
+            <p>Real-Time Weather Forecast</p>
+
+        </div>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="city"
+                placeholder="Enter City Name">
+
+            <button id="searchBtn">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+            <button id="locationBtn">
+
+                <i class="fa-solid fa-location-crosshairs"></i>
+
+            </button>
+
+        </div>
+
+        <div class="weather-card">
+
+            <h2 id="cityName">City</h2>
+
+            <p id="dateTime"></p>
+
+            <img
+                id="weatherIcon"
+                src=""
+                alt="Weather Icon">
+
+            <h1 id="temperature">--°C</h1>
+
+            <h3 id="weatherType">Weather</h3>
+
+            <p id="description">Description</p>
+
+        </div>
+
+        <div class="weather-info">
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-temperature-half"></i>
+
+                <h3>Feels Like</h3>
+
+                <p id="feelsLike">--°C</p>
+
+            </div>
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <h3>Humidity</h3>
+
+                <p id="humidity">--%</p>
+
+            </div>
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-wind"></i>
+
+                <h3>Wind</h3>
+
+                <p id="wind">-- km/h</p>
+
+            </div>
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-gauge-high"></i>
+
+                <h3>Pressure</h3>
+
+                <p id="pressure">-- hPa</p>
+
+            </div>
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-eye"></i>
+
+                <h3>Visibility</h3>
+
+                <p id="visibility">-- km</p>
+
+            </div>
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-sun"></i>
+
+                <h3>Sunrise</h3>
+
+                <p id="sunrise">--</p>
+
+            </div>
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-moon"></i>
+
+                <h3>Sunset</h3>
+
+                <p id="sunset">--</p>
+
+            </div>
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-earth-asia"></i>
+
+                <h3>Country</h3>
+
+                <p id="country">--</p>
+
+            </div>
+
+        </div>
+
+        <div class="forecast">
+
+            <h2>5-Day Forecast</h2>
+
+            <div id="forecastContainer"></div>
+
+        </div>
+
+        <div id="loading" class="loading">
+
+            <div class="loader"></div>
+
+            <p>Loading Weather...</p>
+
+        </div>
+
+        <div id="error" class="error"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
